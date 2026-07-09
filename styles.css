@@ -10,7 +10,8 @@ body {
 }
 
 header {
-    color: #6564DB;
+    color: #824670; /*6564DB*/
+    font-family: sans-serif
 }
 
 #skills {
@@ -18,4 +19,34 @@ header {
     justify-content: center;
     gap: 1rem;
     color: #C5979D;
+    flex-wrap: wrap;
 }
+
+.skill {
+    animation: shake 1s steps(1) infinite;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: blanchedalmond;
+}
+
+.social {
+    animation: shake1 1s steps(1) infinite;
+}
+
+a:link, a:visited {
+    color: blanchedalmond;
+    text-decoration: underline dotted;
+}
+
+@keyframes shake {
+    0% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }}
+
+@keyframes shake1 {
+    0% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }}
