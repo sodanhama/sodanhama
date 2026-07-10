@@ -1,20 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 body {
-    background-color: #0D1317;
+    background-color: #482D44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
     color: #BFD7EA;
     font-family: 'Source Code Pro', monospace;
-    margin: 2rem;
     font-size: 1.5rem;
-    text-align: center;
+}
+
+#ascii-art {
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none; /* i liek safari */
 }
 
 header {
-    color: #824670; /*6564DB*/
+    color: #824670;
     font-family: sans-serif
 }
 
-#skills {
+#main {
+    background-color: #0D1317;
+    top:0;  
+    height: 110vh;
+    width: max-content; 
+    position: absolute;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #BFD7EA;
+}
+
+.skills {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -22,25 +44,52 @@ header {
     flex-wrap: wrap;
 }
 
-.skill {
+#skill {
     animation: shake 1s steps(1) infinite;
 }
 
-#socials {
+.learnings {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #A18FAD;
+    flex-wrap: wrap;
+}
+
+#learning {
+    animation: shake 1s steps(1) infinite;
+}
+
+.socials {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    color: blanchedalmond;
 }
 
-.social {
+#social {
     animation: shake1 1s steps(1) infinite;
 }
 
 a:link, a:visited {
-    color: blanchedalmond;
+    color: #B3E9C7;
     text-decoration: underline dotted;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#project {
+    border: 1px solid blanchedalmond;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    text-wrap: wrap;
+    animation: shake1 2s steps(1) infinite;
 }
 
 @keyframes shake {
@@ -50,3 +99,9 @@ a:link, a:visited {
 @keyframes shake1 {
     0% { transform: rotate(1deg); }
     50% { transform: rotate(-1deg); }}
+
+footer {
+    font-size: 1rem;
+    padding-top: 3rem;
+    color: #A18FAD;
+}
