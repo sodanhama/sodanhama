@@ -71,9 +71,10 @@ header {
 
 #social {
     animation: shake1 1s steps(1) infinite;
+    text-decoration: underline dotted;
 }
 
-a:link, a:visited {
+#social:link, #social:visited {
     color: #B3E9C7;
     text-decoration: underline dotted;
 }
