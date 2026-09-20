@@ -13,12 +13,6 @@ body {
     font-size: 1.5rem;
 }
 
-#ascii-art {
-    cursor: default;
-    user-select: none;
-    -webkit-user-select: none; /* i liek safari */
-}
-
 header {
     color: #824670;
     font-family: sans-serif;
