@@ -1,35 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 body {
-    background-color: #482D44;
-    display: flex;
+    background-color: #0D1317;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    margin: 0;
     color: #BFD7EA;
     height: 100vh;
     font-family: 'Source Code Pro', monospace;
     font-size: 1.5rem;
+    overflow-x: hidden;
 }
+
+/* 
+colors
+#482D44
+*/
 
 header {
     color: #824670;
     font-family: sans-serif;
     padding: 1rem;
-}
-
-#main {
-    background-color: #0D1317;
-    top:0;  
-    width: max-content; 
-    position: absolute;
-    text-align: center;
-    border: 1px solid #BFD7EA;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    overflow-y: auto;
-    height: 100%;
 }
 
 .skills {
@@ -40,9 +31,6 @@ header {
     flex-wrap: wrap;
 }
 
-#skill {
-    animation: shake 1s steps(1) infinite;
-}
 
 .learnings {
     display: flex;
@@ -52,9 +40,6 @@ header {
     flex-wrap: wrap;
 }
 
-#learning {
-    animation: shake 1s steps(1) infinite;
-}
 
 .socials {
     display: flex;
@@ -64,7 +49,6 @@ header {
 }
 
 #social {
-    animation: shake1 1s steps(1) infinite;
     text-decoration: underline dotted;
 }
 
@@ -86,19 +70,14 @@ header {
     border-radius: 1rem;
     font-size: 1rem;
     text-wrap: wrap;
-    animation: shake1 2s steps(1) infinite;
 }
-
-@keyframes shake {
-    0% { transform: rotate(2deg); }
-    50% { transform: rotate(-2deg); }}
-
-@keyframes shake1 {
-    0% { transform: rotate(1deg); }
-    50% { transform: rotate(-1deg); }}
 
 footer {
     font-size: 1rem;
     padding: 1rem;
     color: #A18FAD;
+}
+
+a {
+    color: #BFD7EA;
 }
